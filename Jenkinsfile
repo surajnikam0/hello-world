@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 // Checkout the code from the GitHub repository
-                git url: 'https://github.com/surajnikam0/hello-world.git', branch: 'main'  // Adjust branch if needed
+                git url: 'https://github.com/surajnikam0/hello-world.git', branch: 'main'  // Adjust the branch if needed
             }
         }
 
@@ -18,8 +18,9 @@ pipeline {
 
     post {
         always {
-            echo 'Pipeline finished.'
+            echo 'Pipeline finished.'  // Always runs, regardless of success or failure
         }
     }
 }
+
 
